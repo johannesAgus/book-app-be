@@ -1,0 +1,7 @@
+org\javan\dto\BookDto.class
+org\javan\web\rest\BookController.class
+org\javan\domain\Book.class
+org\javan\repository\BookRepository.class
+org\javan\service\BookService.class
+org\javan\service\impl\BookServiceImpl.class
+org\javan\MainApplication.class

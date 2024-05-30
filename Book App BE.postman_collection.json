@@ -1,0 +1,291 @@
+{
+	"info": {
+		"_postman_id": "3944d3de-8a7b-4dc3-a23a-f9506e57544c",
+		"name": "Book App BE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15237414"
+	},
+	"item": [
+		{
+			"name": "Save",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Don't Cry\",\r\n    \"description\": \"Menjelaskan agar tidak menangis\",\r\n    \"rating\": \"8.0\",\r\n    \"author\":\"Fadlan\",\r\n    \"isbn\":\"IB-06\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9006/api/v1/book/",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"api",
+						"v1",
+						"book",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Save",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Don't Cry\",\r\n    \"description\": \"Menjelaskan agar tidak menangis\",\r\n    \"rating\": \"8.0\",\r\n    \"author\":\"Fadlan\",\r\n    \"isbn\":\"IB-06\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9006/api/v1/book/",
+							"host": [
+								"localhost"
+							],
+							"port": "9006",
+							"path": [
+								"api",
+								"v1",
+								"book",
+								""
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Update",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"abdc74bf-c977-4ba8-ad6a-ece22aa5386f\",\r\n    \"title\": \"Dinosaurus Koko\",\r\n    \"description\": \"Dinosaurus yang dipanggil Koko\",\r\n    \"rating\": 8.0,\r\n    \"author\": \"Chill\",\r\n    \"isbn\": \"IB-02\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9006/api/v1/book/",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"api",
+						"v1",
+						"book",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"abdc74bf-c977-4ba8-ad6a-ece22aa5386f\",\r\n    \"title\": \"Dinosaurus Koko\",\r\n    \"description\": \"Dinosaurus yang dipanggil Koko\",\r\n    \"rating\": 8.0,\r\n    \"author\": \"Chill\",\r\n    \"isbn\": \"IB-02\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9006/api/v1/book/",
+							"host": [
+								"localhost"
+							],
+							"port": "9006",
+							"path": [
+								"api",
+								"v1",
+								"book",
+								""
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9006/api/v1/book/f2e9ea8b-0d81-4668-81b2-3e4102ec742a",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"api",
+						"v1",
+						"book",
+						"f2e9ea8b-0d81-4668-81b2-3e4102ec742a"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:9006/api/v1/book/f2e9ea8b-0d81-4668-81b2-3e4102ec742a",
+							"host": [
+								"localhost"
+							],
+							"port": "9006",
+							"path": [
+								"api",
+								"v1",
+								"book",
+								"f2e9ea8b-0d81-4668-81b2-3e4102ec742a"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "List Book",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9006/api/v1/book/",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"api",
+						"v1",
+						"book",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "List Book",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9006/api/v1/book/",
+							"host": [
+								"localhost"
+							],
+							"port": "9006",
+							"path": [
+								"api",
+								"v1",
+								"book",
+								""
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Detail of Movie",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9006/api/v1/book/f2e9ea8b-0d81-4668-81b2-3e4102ec742a",
+					"host": [
+						"localhost"
+					],
+					"port": "9006",
+					"path": [
+						"api",
+						"v1",
+						"book",
+						"f2e9ea8b-0d81-4668-81b2-3e4102ec742a"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Detail of Movie",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9006/api/v1/book/f2e9ea8b-0d81-4668-81b2-3e4102ec742a",
+							"host": [
+								"localhost"
+							],
+							"port": "9006",
+							"path": [
+								"api",
+								"v1",
+								"book",
+								"f2e9ea8b-0d81-4668-81b2-3e4102ec742a"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
